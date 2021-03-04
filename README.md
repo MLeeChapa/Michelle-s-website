@@ -1,2 +1,2 @@
-# Michelle-s-website
+# MichellesWebsite
 First repository
