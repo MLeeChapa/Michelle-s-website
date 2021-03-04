@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Michelle's Mask</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Michelle's Mask</h2>
+            <div class="toggle"></div>
+        </header>
+        <img>
+        <div class="overlay"></div>
+
+         <div class="text">  <h2>Custom Made</h2>
+            <h3>MASK BY MICHELLE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam illo accusamus asperiores consequatur doloribus omnis saepe tempore quaerat. Tempora voluptates debitis iure quas delectus quasi iste laudantium aliquam autem. Dignissimos.</p>
+           <a href="#">Explore Masks</a>
+        </div> 
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+            function myFunction(x) {
+  x.classList.toggle("change");
+}
+        </script>
+</body>
+</html>
